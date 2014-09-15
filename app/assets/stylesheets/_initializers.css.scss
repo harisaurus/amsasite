@@ -1,0 +1,68 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+
+html,
+body,
+ul,
+ol{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+.siteContent{
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.grid__item{ font-size: 16px; }
+
+body{
+	font-family: 'Varela Round', sans-serif;
+}
+
+h1{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 60px;
+	color: white;
+}
+
+h2{
+	color: $darkGrey;
+	position: relative;
+	padding-bottom: 20px;
+	&:after{
+		content: '';
+		position: absolute;
+		width: 100px;
+		border-bottom: 3px solid $primaryColor;
+		top: 100%;
+		left: 50%;
+		margin-left: -50px;
+	}
+	small{
+		display: block;
+		text-transform: uppercase;
+		font-size: 12px;
+		color: $mediumGrey;
+		letter-spacing: 3px;
+		padding: 5px 0;
+	}
+}
+
+p{
+	color: $mediumGrey;
+	word-spacing: 1px;
+	line-height: 27px;
+}
+
+img{
+	width: 100%;
+}

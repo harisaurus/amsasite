@@ -1,2 +1,39 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<div class="hero">
+	<h1>Ahmadiyya Muslim Student Association</h1>
+	<h3>Love for All, Hatred for None</h3>
+	<a href="#" class="button">See Institutions</a>
+</div>
+
+<div class="introduction">
+	<div class="siteContent">
+		<div class="grid grid--center">
+			<div class="grid__item desk--four-fifths">
+				<div class="textCenter">
+					<h2>A Brief Introduction</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut tempora voluptates, illo in incidunt ut alias placeat laudantium odio cupiditate assumenda ipsa rerum eos, facilis voluptatem sint. Ducimus ea voluptatibus recusandae nihil nam quos neque veniam iste quibusdam, illo beatae error cum culpa quidem numquam sed harum esse natus magnam, temporibus labore! Blanditiis qui possimus sit quaerat recusandae, officiis cum, molestiae distinctio dolore! Amet magni at quas placeat nesciunt quia recusandae architecto unde tempore ea. Quas est harum esse nostrum vitae recusandae quasi! Repellat porro quo dolorem alias, placeat id animi provident nam nulla aliquam temporibus laboriosam voluptatem soluta iusto aspernatur, quod laudantium dignissimos perspiciatis quisquam adipisci dolore minus incidunt vero expedita? Facere, nihil consequatur magnam soluta nostrum esse, labore blanditiis ad placeat aliquid impedit!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="listing">
+	<div class="siteContent">
+		<div class="grid">
+			<div class="grid__item one-whole">
+				<div class="textCenter">
+					<h2>AMSA Institutions<small>in Canada</small></h2>
+				</div>
+			</div>
+			
+			<% @institutions.sort_by{|i| i.name}.each do |institution| %>
+				<div class="grid__item one-third">
+					<%= render "institution", institution: institution %>
+				</div>
+			<% end %>
+
+		</div>
+	</div>
+</div>
+
+<h5>Total institutions: <%= @institutions.count %></h5>

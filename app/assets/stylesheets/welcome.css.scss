@@ -1,3 +1,31 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'variables';
+
+.userNav{
+	position: absolute;
+	width: 100%;
+}
+
+.hero{
+	// background: url('http://tympanus.net/Freebies/HalcyonDaysTemplate/img/hero-bg.jpg') no-repeat center center;
+	background: image-url('hero.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 65px 0 300px 0;
+	height: auto;
+	text-align: center
+}
+
+.introduction{
+	background-color: $lightGrey;
+	padding: 90px 0 100px;
+}
+
+.listing{
+	padding: 90px 0 100px;
+}
