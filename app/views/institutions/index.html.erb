@@ -1,6 +1,41 @@
-<h1>Listing institutions</h1>
+<div class="siteContent">
+  <div class="heading">
+    <div class="grid grid--middle">
+      <div class="grid__item one-half">
+        <h1>Institutions</h1>
+      </div>
+      <div class="grid__item one-half">
+        <div class="alignRight">
+          <%= link_to 'New Institution', new_institution_path, class: 'button button--primary' %>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Institutions Loop -->
+  <% @institutions.each do |institution| %>
+    <div class="listItem spacer10">
+      <div class="grid grid--middle">
+        <div class="grid__item one-half">
+          <div class="listItem-info">
+            <h4 class="spacer5"><%= institution.name %> <small><%= institution.location %></small></h4>
+            <h5><%= institution.members %> Members</h5>
+          </div>
+        </div>
+        <div class="grid__item one-half">
+          <div class="listItem-actions alignRight">
+            <%= link_to 'Show', institution, class: "button button--secondary small" %>
+            <%= link_to 'Edit', edit_institution_path(institution), class: "button button--secondary small" %>
+            <%= link_to 'Destroy', institution, method: :delete, class: "button button--secondary small", data: { confirm: 'Are you sure?' } %>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
 
-<table>
+</div>
+
+<!-- <table>
   <thead>
     <tr>
       <th>Name</th>
@@ -32,4 +67,4 @@
 
 <br>
 
-<%= link_to 'New Institution', new_institution_path %>
+ -->

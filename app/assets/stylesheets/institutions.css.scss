@@ -3,3 +3,21 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @import 'variables';
+
+h1{
+	font-family: 'Raleway', sans-serif;
+}
+
+body{
+	background-color: $lightGrey;
+}
+
+.heading{
+	padding: 40px 0;
+}
+
+.listItem{
+	background-color: white;
+	padding: 20px 30px;
+	border-bottom: 2px solid darken($lightGrey, 10%);
+}

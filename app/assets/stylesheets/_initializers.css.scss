@@ -4,7 +4,12 @@
 html,
 body,
 ul,
-ol{
+ol,
+h1,
+h2,
+h3,
+h4,
+h5{
 	margin: 0;
 	padding: 0;
 }
@@ -25,36 +30,6 @@ a{
 
 body{
 	font-family: 'Varela Round', sans-serif;
-}
-
-h1{
-	font-family: 'Raleway', sans-serif;
-	font-weight: 700;
-	font-size: 60px;
-	color: white;
-}
-
-h2{
-	color: $darkGrey;
-	position: relative;
-	padding-bottom: 20px;
-	&:after{
-		content: '';
-		position: absolute;
-		width: 100px;
-		border-bottom: 3px solid $primaryColor;
-		top: 100%;
-		left: 50%;
-		margin-left: -50px;
-	}
-	small{
-		display: block;
-		text-transform: uppercase;
-		font-size: 12px;
-		color: $mediumGrey;
-		letter-spacing: 3px;
-		padding: 5px 0;
-	}
 }
 
 p{
