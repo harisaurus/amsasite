@@ -16,6 +16,7 @@ h5{
 
 a{
 	text-decoration: none;
+	font-family: 'Varela Round', sans-serif;
 	&:hover{
 		text-decoration: none;
 	}
@@ -26,16 +27,17 @@ a{
 	margin: 0 auto;
 }
 
-.grid__item{ font-size: 16px; }
+.grid__item{ font-size: 18px; }
 
 body{
-	font-family: 'Varela Round', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 p{
 	color: $mediumGrey;
 	word-spacing: 1px;
-	line-height: 27px;
+	line-height: 2;
+	margin-top: 0;
 }
 
 img{

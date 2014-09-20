@@ -3,12 +3,12 @@
 <head>
   <title>Amsasite</title>
   <%= stylesheet_link_tag    "application", params[:controller], media: "all", "data-turbolinks-track" => true %>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <%= javascript_include_tag "application", params[:controller], "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body class="<%= params[:controller] %>">
-	<%= render 'layouts/navbar' %>
 	<%= yield %>
-
+	<%= render 'layouts/footer' %>
 </body>
 </html>

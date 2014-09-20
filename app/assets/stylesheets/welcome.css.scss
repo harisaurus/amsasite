@@ -15,6 +15,7 @@ h2{
 	color: $darkGrey;
 	position: relative;
 	padding-bottom: 20px;
+	margin-bottom: 30px;
 	&:after{
 		content: '';
 		position: absolute;
@@ -34,9 +35,17 @@ h2{
 	}
 }
 
-.userNav{
+.social{
+	display: inline-block;
 	position: absolute;
-	width: 100%;
+	top: 15px;
+	right: 15px;
+	color: $primaryColor;
+	font-size: 30px;
+	transition: all 0.1s ease-in-out;
+	&:hover{
+		color: lighten($primaryColor, 20%);
+	}
 }
 
 .hero{
@@ -46,7 +55,7 @@ h2{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	padding: 65px 0 300px 0;
+	padding: 175px 0 225px 0;
 	height: auto;
 	text-align: center;
 
@@ -62,4 +71,24 @@ h2{
 
 .listing{
 	padding: 90px 0 100px;
+}
+
+.institution-top{
+	background-color: $lightGrey;
+	position: relative;
+	padding: 15px;
+	&:before{
+		content: '';
+		display: block;
+		padding-top: 100%;
+	}
+
+}
+
+.institution-image{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 70%;
+	left: 15%;
 }

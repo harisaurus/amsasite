@@ -1,8 +1,9 @@
 Amsasite::Application.routes.draw do
   devise_for :users
-  authenticate :user do
-    resources :institutions
-  end
+  resources :institutions
+  # authenticate :user do
+  #   resources :institutions
+  # end
 
   get "welcome/index"
   root "welcome#index"
